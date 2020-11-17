@@ -8,7 +8,7 @@ namespace NUnitTestProject1
 {
     public class DriverHelper
     {
-        public static IWebDriver Driver { get; set; }      
+        public static IWebDriver driver { get; set; }      
 
     }
 }
