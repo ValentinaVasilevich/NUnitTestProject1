@@ -34,10 +34,5 @@ namespace NUnitTestProject1
             selectElement.SelectByText(text);
         }
 
-        public static void WaitForWebElement( IWebElement webElement, IWait<IWebDriver> wait)
-        {
-            wait.Until(x => webElement.Displayed);
-        }
-
     }
 }
