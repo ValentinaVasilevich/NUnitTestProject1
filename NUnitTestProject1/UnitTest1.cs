@@ -13,7 +13,6 @@ namespace NUnitTestProject1
         private static String USERNAME = "SeleniumTr@tut.by";
         private static String PASSWORD = "Selenium_001";
 
-
         [SetUp]
         public void Setup()
         {
