@@ -52,39 +52,6 @@ namespace NUnitTestProject1
             value = name1.Text;
             Assert.AreEqual("Войти", value);
             driver.Close();
-        }
-
-
-        //--------------------------------------------
-        [Test]
-        public void Test1i()
-        {
-            driver.Navigate().GoToUrl("https://demowf.aspnetawesome.com/");
-
-            driver.FindElement(By.Id("ContentPlaceHolder1_Meal")).SendKeys("Tomato");
-
-            driver.FindElement(By.XPath("//input[@name = 'ctl00$ContentPlaceHolder1$ChildMeal1']/following-sibling::div[text()='Celery'] ")).Click();
-
-            CustomControl.ComboBox("ContentPlaceHolder1_AllMealsCombo", "Almod");
-
-            driver.Close();
-
-            Console.WriteLine("Test1");
-            Assert.Pass();
-        }
-
-        [Test]
-        public void Test1ii()
-        {
-            driver.Navigate().GoToUrl("https://demowf.aspnetawesome.com/");
-            CustomControl.EnterText(driver.FindElement(By.Id("ContentPlaceHolder1_Meal")), "Mango");
-            CustomControl.ClickElement(driver.FindElement(By.XPath("//input[@name = 'ctl00$ContentPlaceHolder1$ChildMeal1']/following-sibling::div[text()='Celery'] ")));
-            CustomControl.ComboBox("ContentPlaceHolder1_AllMealsCombo", "Almod");
-            CustomControl.SelectByText(driver.FindElement(By.Id("ContentPlaceHolder1_Add1-awed")), "Lettuce");
-
-            Console.WriteLine("Test1");
-            Assert.Pass();
-        }
-
+        }   
     }
 }
