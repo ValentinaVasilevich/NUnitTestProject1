@@ -8,10 +8,11 @@ using System.Text;
 
 namespace NUnitTestProject1
 {
-     public class CustomControl: DriverHelper
-    {     
+    public class CustomControl : DriverHelper
+    {
         public static void ClickElement(IWebElement webElement) => webElement.Click();
 
-        public static void EnterText(IWebElement webElement, string value) => webElement.SendKeys(value);  
+        public static void EnterText(IWebElement webElement, string value) => webElement.SendKeys(value);       
     }
 }
+
